@@ -28,7 +28,9 @@ android {
     dexOptions {
         preDexLibraries = false
     }
-
+    task wrapper(type: Wrapper) {
+        gradleVersion = '6.7.1'
+    }
     buildTypes {
         release {
             minifyEnabled false
