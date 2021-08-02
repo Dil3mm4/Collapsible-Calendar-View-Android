@@ -360,14 +360,16 @@ class CollapsibleCalendar : UICalendar, View.OnClickListener {
 
     fun addEventTag(numYear: Int, numMonth: Int, numDay: Int) {
         mAdapter!!.addEvent(Event(numYear, numMonth, numDay, eventColor))
-
         reload()
     }
 
     fun addEventTag(numYear: Int, numMonth: Int, numDay: Int, color: Int) {
         mAdapter!!.addEvent(Event(numYear, numMonth, numDay, color))
+        reload()
+    }
 
-
+    fun clearEventTag() {
+        mAdapter!!.clearEvent()
         reload()
     }
 

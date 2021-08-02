@@ -6,11 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.widget.ImageView
 import android.widget.TextView
-
 import com.shrikanthravi.collapsiblecalendarview.R
-
-import java.util.ArrayList
-import java.util.Calendar
+import java.util.*
 
 /**
  * Created by shrikanthravi on 06/03/18.
@@ -52,6 +49,10 @@ class CalendarAdapter(context: Context, cal: Calendar) {
 
     fun addEvent(event: Event) {
         mEventList.add(event)
+    }
+
+    fun clearEvent() {
+        mEventList.clear()
     }
 
     fun refresh() {
@@ -117,8 +118,9 @@ class CalendarAdapter(context: Context, cal: Calendar) {
             for (j in mEventList.indices) {
                 val event = mEventList[j]
                 if (day.year == event.year
-                        && day.month == event.month
-                        && day.day == event.day) {
+                    && day.month == event.month
+                    && day.day == event.day
+                ) {
                     imgEventTag.visibility = View.VISIBLE
                     imgEventTag.setColorFilter(event.color, PorterDuff.Mode.SRC_ATOP)
                 }
