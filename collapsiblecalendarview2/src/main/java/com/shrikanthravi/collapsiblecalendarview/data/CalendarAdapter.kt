@@ -60,7 +60,7 @@ class CalendarAdapter(context: Context, cal: Calendar) {
         for (ev in mEventList) {
             if (ev.day == event.day && ev.month == event.month && ev.year == event.year) {
                 hasBeenFound = true
-                foundEvent = event
+                foundEvent = ev
             }
         }
         if (hasBeenFound) {
