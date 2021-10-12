@@ -11,7 +11,7 @@
 [![Android Arsenal]( https://img.shields.io/badge/Android%20Arsenal-Collapsible--Calendar--View--Android-green.svg?style=flat )]( https://android-arsenal.com/details/1/6829 )
 
 ### Version
-[![](https://jitpack.io/v/shrikanth7698/Collapsible-Calendar-View-Android.svg)](https://jitpack.io/#shrikanth7698/Collapsible-Calendar-View-Android)
+[![](https://jitpack.io/v/shrikanth7698/Collapsible-Calendar-View-Android.svg)](https://jitpack.io/#dil3mm4/Collapsible-Calendar-View-Android)
 
 ### Installation
 
@@ -30,7 +30,7 @@
 	Add the dependency in your app build.gradle
 	```gradle
 	dependencies {
-			implementation 'com.github.shrikanth7698:Collapsible-Calendar-View-Android:v1.0.3'
+			implementation 'com.github.dil3mm4:Collapsible-Calendar-View-Android:v1.0.36'
 		}
 	```
 
